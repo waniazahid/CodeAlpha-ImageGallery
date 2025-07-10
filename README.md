@@ -1,8 +1,8 @@
 **Responsive Image Gallery**
 A simple and responsive image gallery with modal image viewer using HTML, CSS, JS, and Bootstrap.
 
-Features**
-**Two galleries: Food & WildLife Areas
+**Features**
+Two galleries: Food & WildLife Areas
 Modal image preview on click
 Next/Prev buttons inside modal
 Mobile & desktop responsive
