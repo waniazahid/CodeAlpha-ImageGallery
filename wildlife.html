@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Life Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="wildlife-bg">
+<div class="container mt-4 gallery-section">
+    <h2 class="text-center mb-4">Wild Life Gallery</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://thumbs.dreamstime.com/b/wild-animals-group-blue-sly-background-wild-animals-group-blue-sly-background-192259879.jpg" class="gallery-img" alt="Food" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/026/433/488/small_2x/lion-and-cub-hunter-love-in-kruger-np-south-african-generative-ai-photo.jpg" class="gallery-img" alt="Food" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://t3.ftcdn.net/jpg/01/73/37/16/360_F_173371622_02A2qGqjhsJ5SWVhUPu0t9O9ezlfvF8l.jpg" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://i.insider.com/5bf29fe948eb1262ae77eaa2?width=800&format=jpeg&auto=webp" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://www.littlepassports.com/wpv2/wp-content/uploads/2022/06/Sea-turtle-over-reef-960x640.jpg" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://c.pxhere.com/photos/3c/9d/seal_grey_animal_north_sea_wild_animal_threatened_juvenile_view-1341115.jpg!s2" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MjAzMzEzMDI1MzgwMjYzMDk0/sea-animals-list.jpg" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://images.squarespace-cdn.com/content/v1/6096ca1ab96d655ec68fbea4/1672194994187-M0Y7L7TE0T98DPUGW1FF/NYSCI+Narwals.png?format=1000w" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://media.istockphoto.com/id/472181807/photo/cape-eagle-owl-bubo-capensis.jpg?s=612x612&w=0&k=20&c=Mstkli85va4X3Sy5mNsgu6pKVdUJ0slmLkr1Xbo11kw=" class="gallery-img" alt="Food" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://heyblueridge.com/wp-content/uploads/2024/01/bald-eagle.jpg" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://media.istockphoto.com/id/1333397508/photo/beautiful-puffin-bird-during-midnight-sun-in-iceland.jpg?s=612x612&w=0&k=20&c=odOfVTCCN8yM_N5I-WTnnEfDkTHZ-V7gKDETwSyqSCw=" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <img src="https://p2.piqsels.com/preview/733/352/853/animal-avian-beautiful-birds.jpg" class="gallery-img" alt="Animal" onclick="openModal(this)">
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-body p-0 position-relative text-center">
+        <button class="nav-btn left-btn" onclick="prevImage()">&#10094;</button>
+        <img src="" class="modal-img d-block mx-auto" id="modalImage" alt="Large View">
+        <button class="nav-btn right-btn" onclick="nextImage()">&#10095;</button>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
